@@ -1,7 +1,7 @@
 <?php
 require "init.php";
 
-$query= "select course_details_name, course_details_code from course_details
+$query= "select course_details_name, course_details_code from second_year_course_list
          union all
          select first_year_course_list_name,first_year_course_list_code from first_year_course_list ORDER BY course_details_name;";
 

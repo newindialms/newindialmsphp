@@ -21,7 +21,7 @@
 <body>
 <?php 
 require "init.php";
-$query="SELECT 	course_details_code,course_details_name,	course_details_credits,course_details_category,	course_details_faculty,course_details_abbr from course_details;";
+$query="SELECT 	course_details_code,course_details_name,	course_details_credits,course_details_category,	course_details_faculty,course_details_abbr from second_year_course_list;";
 $result=mysqli_query($con,$query);
 ?>
 <div class="header">

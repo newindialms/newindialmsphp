@@ -1,7 +1,7 @@
 <?php
 require "init.php";
 	
-$query= "SELECT course_details_name,course_details_code FROM course_details ORDER BY course_details_name" ;
+$query= "SELECT course_details_name,course_details_code FROM second_year_course_list ORDER BY course_details_name" ;
 
 $result = mysqli_query($con,$query);
 $response=array();

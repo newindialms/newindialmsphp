@@ -25,9 +25,9 @@ require "init.php";
 	else{
 		$sql="insert into first_year_course_list values(DEFAULT,'".$course_details_code."','".$course_details_name."','".$addcourse_credits."','".$course_details_faculty."','".$course_details_abbr."');";
 	   
-	   	/* updating the First_year table when new course is added for the first year*/
+	   	/* updating the first_year_students table when new course is added for the first year*/
 	    $combined_coursename=",".$course_details_name;
-		$sqlupdate="UPDATE first_year SET first_year_courses = CONCAT(first_year_courses, '".$combined_coursename."')"; $resultsql = mysqli_query($con,$sqlupdate);
+		$sqlupdate="UPDATE first_year_students SET first_year_courses = CONCAT(first_year_courses, '".$combined_coursename."')"; $resultsql = mysqli_query($con,$sqlupdate);
 		
 
 		$result = mysqli_query($con,$sql);

@@ -15,7 +15,7 @@ while($row=mysqli_fetch_array($result)){
         foreach($array as $value) //loop over values
         {
             //echo $value;
-			$query="SELECT feedback_title,feedback_question,feedback_type FROM feedback_info WHERE id='$value'";
+			$query="SELECT feedback_title,feedback_question,feedback_type FROM feedback_questions WHERE id='$value'";
 			
 			$result1=mysqli_query($con,$query);
            while($row1 = mysqli_fetch_array($result1)) {

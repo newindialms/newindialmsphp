@@ -8,7 +8,7 @@ $id = $_POST["id"];
 
 
 
-$query="UPDATE feedback_info SET 
+$query="UPDATE feedback_questions SET
 feedback_title='$feedback_title',
 feedback_question='$feedback_question',
 feedback_type='$feedback_type'

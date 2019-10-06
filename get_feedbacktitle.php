@@ -1,7 +1,7 @@
 <?php
 require "init.php";
 
-$query= "select feedback_title from feedback_info;";
+$query= "select feedback_title from feedback_questions;";
 
 $result = mysqli_query($con,$query);
 $response=array();

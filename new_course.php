@@ -11,7 +11,7 @@ require "init.php";
     $course_details_abbr = $_POST["course_details_abbr"];
    
 	
-	$sql="select * from course_details where course_details_code like '".$course_details_code."';";
+	$sql="select * from second_year_course_list where course_details_code like '".$course_details_code."';";
 	
 	$result = mysqli_query($con,$sql);
 	$response=array();
@@ -25,7 +25,7 @@ require "init.php";
 	}
 	else{
 	  
-		$sql="insert into course_details values(DEFAULT,'".$course_details_code."','".$course_details_name."','".$course_details_specialization."','".$addcourse_credits."','".$course_details_category."','".$course_details_faculty."','".$course_details_abbr."');";
+		$sql="insert into second_year_course_list values(DEFAULT,'".$course_details_code."','".$course_details_name."','".$course_details_specialization."','".$addcourse_credits."','".$course_details_category."','".$course_details_faculty."','".$course_details_abbr."');";
 	 
 
 		$result = mysqli_query($con,$sql);

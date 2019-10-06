@@ -5,7 +5,7 @@ require "init.php";
 $student_rollnno = $_POST["student_rollnno"];
 $courses_disenrolled = $_POST["courses_disenrolled"];
 
-	$query="SELECT student_specialization FROM student_details WHERE student_rollnno='$student_rollnno'";
+	$query="SELECT student_specialization FROM first_second_year_student_details WHERE student_rollnno='$student_rollnno'";
 	$result=mysqli_query($con,$query);
     $response=array();
 	
@@ -22,9 +22,9 @@ $courses_disenrolled = $_POST["courses_disenrolled"];
             }
             
 		}
-		 $query="UPDATE student_details SET student_specialization = '$newarraynama' WHERE student_rollnno = '$student_rollnno'";
+		 $query="UPDATE first_second_year_student_details SET student_specialization = '$newarraynama' WHERE student_rollnno = '$student_rollnno'";
             $result=mysqli_query($con,$query);
-            $queryu="UPDATE student_year_table SET student_specialization = '$newarraynama' WHERE student_rollno = '$student_rollnno'";
+            $queryu="UPDATE second_year_students SET student_specialization = '$newarraynama' WHERE student_rollno = '$student_rollnno'";
             $resultu=mysqli_query($con,$queryu);
 	}
 

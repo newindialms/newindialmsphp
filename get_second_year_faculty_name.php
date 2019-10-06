@@ -3,7 +3,7 @@ require "init.php";
 
 $coursename = $_POST["coursename"];
 
-$query= "select course_details_credits,	course_details_faculty from course_details where course_details_name like '".$coursename."';";
+$query= "select course_details_credits,	course_details_faculty from second_year_course_list where course_details_name like '".$coursename."';";
 
 $result = mysqli_query($con,$query);
 $response=array();

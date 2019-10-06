@@ -2,9 +2,9 @@
 
 require "init.php";
 
-$sql1="SELECT student_details.student_rollnno FROM student_details INNER JOIN student_year_table ON student_details.student_rollnno=student_year_table.student_rollno WHERE FIND_IN_SET('Project Management',`courses_enrolled`) > 0";"
+$sql1="SELECT first_second_year_student_details.student_rollnno FROM first_second_year_student_details INNER JOIN second_year_students ON student_details.student_rollnno=second_year_students.student_rollno WHERE FIND_IN_SET('Project Management',`courses_enrolled`) > 0";"
 
-$sql2="SELECT attendace_details.student_rollnno FROM attendace_details WHERE (attendance_date = '18-11-17' AND course_details_name='Project Management')";"
+$sql2="SELECT second_year_attendance_details.student_rollnno FROM second_year_attendance_details WHERE (attendance_date = '18-11-17' AND course_details_name='Project Management')";"
 
 $result1 = mysqli_query($con,$sql1);
 $result2 = mysqli_query($con,$sql2);

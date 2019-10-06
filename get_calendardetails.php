@@ -4,7 +4,7 @@
 require "init.php";
 
 
-$query= "select * from calendar_details ORDER BY calendar_id DESC LIMIT 1;";
+$query= "select * from academic_calendar_details ORDER BY calendar_id DESC LIMIT 1;";
 
 $result = mysqli_query($con, $query);
 

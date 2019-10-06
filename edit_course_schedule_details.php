@@ -41,7 +41,7 @@
 $course_schedule_id=$_GET['id'];
 require "init.php";
 
-$query="SELECT * from course_schedule WHERE course_schedule_id='$course_schedule_id'";
+$query="SELECT * from course_schedule_secondyear WHERE course_schedule_id='$course_schedule_id'";
 $result=mysqli_query($con,$query);
 ?>
 

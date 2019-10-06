@@ -3,7 +3,7 @@ require "init.php";
 	
 $addcourse_specialization = $_POST["addcourse_specialization"];
 
-$query= "SELECT DISTINCT course_details_name,course_details_code from course_details where 	course_details_specialization like '".$addcourse_specialization."';";
+$query= "SELECT DISTINCT course_details_name,course_details_code from second_year_course_list where 	course_details_specialization like '".$addcourse_specialization."';";
 
 $result = mysqli_query($con,$query);
 $response=array();

@@ -2,7 +2,7 @@
 require "init.php";
 	
 
-$query= "SELECT student_rollnno,student_firstname,student_lastname FROM student_details WHERE student_year='1';";
+$query= "SELECT student_rollnno,student_firstname,student_lastname FROM first_second_year_student_details WHERE student_year='1';";
 
 $result = mysqli_query($con,$query);
 $row_cnt = mysqli_num_rows($result);

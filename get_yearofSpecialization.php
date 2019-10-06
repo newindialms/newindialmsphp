@@ -3,7 +3,7 @@ require "init.php";
 	
 	$student_program = $_POST["student_program"];
 	
-$query= "select DISTINCT course_details_specialization from course_details WHERE course_details_category='Elective';";
+$query= "select DISTINCT course_details_specialization from second_year_course_list WHERE course_details_category='Elective';";
 
 $result = mysqli_query($con,$query);
 $response=array();

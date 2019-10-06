@@ -4,7 +4,7 @@ require "init.php";
 $course_schedule_issue	 = $_POST["course_schedule_issue"];
 $course_schedule_day = $_POST["course_schedule_day"];
 
-$query= "SELECT course_schedule_day,course_schedule_date,course_schedule_starttime,course_schedule_endtime,course_schedule_course,course_schedule_faculty,course_schedule_program FROM course_schedule WHERE (course_schedule_issue ='$course_schedule_issue' AND course_schedule_day='$course_schedule_day')";
+$query= "SELECT course_schedule_day,course_schedule_date,course_schedule_starttime,course_schedule_endtime,course_schedule_course,course_schedule_faculty,course_schedule_program FROM course_schedule_secondyear WHERE (course_schedule_issue ='$course_schedule_issue' AND course_schedule_day='$course_schedule_day')";
 
 $result = mysqli_query($con,$query);
 $response=array();

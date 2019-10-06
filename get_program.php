@@ -1,7 +1,7 @@
 <?php
 require "init.php";
 
-$query= "select DISTINCT student_program from student_details;";
+$query= "select DISTINCT student_program from first_second_year_student_details;";
 
 $result = mysqli_query($con,$query);
 $response=array();

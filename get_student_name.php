@@ -4,7 +4,7 @@ require "init.php";
 $student_program = $_POST["student_program"];
 $student_joining = $_POST["student_joining"];
 	
-$query= "select student_firstname,student_lastname,student_rollnno,student_specialization from student_details where student_program like '".$student_program."' AND student_joining like '".$student_joining."';";
+$query= "select student_firstname,student_lastname,student_rollnno,student_specialization from first_second_year_student_details where student_program like '".$student_program."' AND student_joining like '".$student_joining."';";
 
 $result = mysqli_query($con,$query);
 $response=array();

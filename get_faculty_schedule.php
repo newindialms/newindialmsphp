@@ -5,7 +5,7 @@ $faculty_employeeid = $_POST['faculty_employeeid'];
 $datevalue = $_POST['datevalue'];
 $datevalue=date('d-m-Y', strtotime($datevalue));
 	
-$querys= "SELECT course_schedule_starttime,course_schedule_endtime,course_schedule_program,course_schedule_course FROM course_schedule WHERE (course_schedule_faculty=(SELECT faculty_code from faculty_details WHERE faculty_employeeid='$faculty_employeeid')AND course_schedule_date='$datevalue')";
+$querys= "SELECT course_schedule_starttime,course_schedule_endtime,course_schedule_program,course_schedule_course FROM course_schedule_secondyear WHERE (course_schedule_faculty=(SELECT faculty_code from faculty_details WHERE faculty_employeeid='$faculty_employeeid')AND course_schedule_date='$datevalue')";
 
 $queryf= "SELECT course_schedule_time,course_name,course_code,course_classroom,faculty_code FROM course_schedule_firstyear WHERE course_date='$datevalue' ";
 

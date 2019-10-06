@@ -6,7 +6,7 @@ $studentid = $_POST['studentid'];
 $datevalue = $_POST['datevalue'];
 $datevalue=date('d-m-Y', strtotime($datevalue));
 
-$sql="select courses_enrolled from student_year_table WHERE student_rollno ='$studentid'";
+$sql="select courses_enrolled from second_year_students WHERE student_rollno ='$studentid'";
 $result = mysqli_query($con,$sql);
 $response1=array();
 while($row1=mysqli_fetch_array($result)){
@@ -14,8 +14,8 @@ while($row1=mysqli_fetch_array($result)){
      $array = explode(',', $output);
         foreach($array as $value) //loop over values
         {
-            $query= "SELECT course_schedule_program,course_schedule_starttime,course_schedule_endtime,course_schedule_course,course_schedule_faculty FROM course_schedule WHERE(course_schedule_date ='$datevalue')";
-             $queryc= "SELECT course_details_abbr FROM course_details WHERE(course_details_name ='$value')";
+            $query= "SELECT course_schedule_program,course_schedule_starttime,course_schedule_endtime,course_schedule_course,course_schedule_faculty FROM course_schedule_secondyear WHERE(course_schedule_date ='$datevalue')";
+             $queryc= "SELECT course_details_abbr FROM second_year_course_list WHERE(course_details_name ='$value')";
             
             $result = mysqli_query($con,$query);
             $resultc = mysqli_query($con,$queryc);

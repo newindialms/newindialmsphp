@@ -3,7 +3,7 @@ require "init.php";
 
 $course_schedule_id = $_GET["id"];
 
-$query="DELETE FROM course_schedule WHERE course_schedule_id='$course_schedule_id'";
+$query="DELETE FROM course_schedule_secondyear WHERE course_schedule_id='$course_schedule_id'";
 
 $result=mysqli_query($con,$query);
 

@@ -6,16 +6,16 @@ $student_year = $_POST["student_year"];
 $courses_enrolled = $_POST["courses_enrolled"];
 $student_specialization = $_POST["student_specialization"];
 
-$query="SELECT * FROM student_year_table WHERE student_rollno='$student_rollno'";
+$query="SELECT * FROM second_year_students WHERE student_rollno='$student_rollno'";
 
 $result=mysqli_query($con,$query);
 
-$querye="SELECT courses_enrolled FROM student_year_table WHERE student_rollno='$student_rollno'";
+$querye="SELECT courses_enrolled FROM second_year_students WHERE student_rollno='$student_rollno'";
 	$resulte=mysqli_query($con,$querye);
 	
 $row=mysqli_fetch_array($resulte);
 if(mysqli_num_rows($result) > 0){
-	$query="SELECT courses_enrolled FROM student_year_table WHERE student_rollno='$student_rollno'";
+	$query="SELECT courses_enrolled FROM second_year_students WHERE student_rollno='$student_rollno'";
     	$result=mysqli_query($con,$query);
 	    $row=mysqli_fetch_array($result);
 		$output=$row[0];
@@ -33,7 +33,7 @@ if(mysqli_num_rows($result) > 0){
 		$finalvalue = rtrim($finalvalue, ',');
 		$finalvalue = ltrim($finalvalue, ',');
 		
-		$query="UPDATE student_year_table SET courses_enrolled = '$finalvalue' WHERE student_rollno = '$student_rollno'";
+		$query="UPDATE second_year_students SET courses_enrolled = '$finalvalue' WHERE student_rollno = '$student_rollno'";
     	$result=mysqli_query($con,$query);
     	if ( $result === TRUE) {
     		echo "Record updated successfully";
@@ -43,7 +43,7 @@ if(mysqli_num_rows($result) > 0){
 		 
 }
 else{
-	$query="INSERT INTO student_year_table(student_rollno,student_year,courses_enrolled,student_specialization) VALUES('$student_rollno','$student_year ','$courses_enrolled','$student_specialization')";
+	$query="INSERT INTO second_year_students(student_rollno,student_year,courses_enrolled,student_specialization) VALUES('$student_rollno','$student_year ','$courses_enrolled','$student_specialization')";
 	$result=mysqli_query($con,$query);
 	echo "inserted successfully";
 }

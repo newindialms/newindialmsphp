@@ -3,7 +3,7 @@ require "init.php";
 
 $student_rollnno = $_POST['student_rollnno'];
 
-$sql="select student_specialization from student_details WHERE student_rollnno ='$student_rollnno'";
+$sql="select student_specialization from first_second_year_student_details WHERE student_rollnno ='$student_rollnno'";
 
 $result = mysqli_query($con,$sql);
 $response=array();
@@ -21,7 +21,7 @@ while($row=mysqli_fetch_array($result)){
      $array = explode(',',$myarray);
         foreach($array as $value) //loop over values
         {
-	$query= "SELECT course_details_name,course_details_code,course_details_credits,course_details_faculty FROM course_details WHERE course_details_specialization ='$value' ORDER BY course_details_name ";
+	$query= "SELECT course_details_name,course_details_code,course_details_credits,course_details_faculty FROM second_year_course_list WHERE course_details_specialization ='$value' ORDER BY course_details_name ";
 
         $result1 = mysqli_query($con,$query);
         
@@ -34,7 +34,7 @@ while($row=mysqli_fetch_array($result)){
         }
         
         
-        $query= "SELECT courses_enrolled  FROM student_year_table WHERE student_rollno ='$student_rollnno'";
+        $query= "SELECT courses_enrolled  FROM second_year_students WHERE student_rollno ='$student_rollnno'";
     	$result = mysqli_query($con,$query);
         $responsem=array();
         $myresult=array();
@@ -62,7 +62,7 @@ while($row=mysqli_fetch_array($result)){
         
            foreach($myresult as $value) //loop over values
                 {
-            	$querycode= "SELECT DISTINCT course_details_name,course_details_code,course_details_credits,course_details_faculty FROM course_details WHERE course_details_name ='$value'";
+            	$querycode= "SELECT DISTINCT course_details_name,course_details_code,course_details_credits,course_details_faculty FROM second_year_course_list WHERE course_details_name ='$value'";
             
                     $resultcode = mysqli_query($con,$querycode);
                     

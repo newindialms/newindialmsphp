@@ -552,10 +552,10 @@ INSERT INTO `studentprofile_image` (`id`, `url`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `student_details`
+-- Table structure for table `first_second_year_student_details`
 --
 
-CREATE TABLE `student_details` (
+CREATE TABLE `first_second_year_student_details` (
   `studentdetails_ID` int(11) NOT NULL,
   `student_rollnno` int(200) NOT NULL,
   `student_lastname` varchar(255) NOT NULL,
@@ -570,7 +570,7 @@ CREATE TABLE `student_details` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `student_details`
+-- Dumping data for table `first_second_year_student_details`
 --
 
 INSERT INTO `student_details` (`studentdetails_ID`, `student_rollnno`, `student_lastname`, `student_firstname`, `student_phone`, `student_email`, `student_program`, `student_specialization`, `student_joining`, `student_graduation`, `student_year`) VALUES
@@ -598,7 +598,7 @@ INSERT INTO `student_details` (`studentdetails_ID`, `student_rollnno`, `student_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `student_year_table`
+-- Table structure for table `second_year_students`
 --
 
 CREATE TABLE `student_year_table` (

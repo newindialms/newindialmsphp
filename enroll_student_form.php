@@ -168,7 +168,7 @@
             <table>
 			
                 <?php
-                    $SQLSELECT = "SELECT * FROM student_details ";
+                    $SQLSELECT = "SELECT * FROM first_second_year_student_details ";
                     $result_set =  mysqli_query($con,$SQLSELECT);
                     $row = mysqli_fetch_array($result_set);
                 ?>

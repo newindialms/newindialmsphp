@@ -46,7 +46,7 @@ require "init.php";
 		    	}
 	    	}
 		else if($idtype=="student"){
-		    	$sql1="select student_rollnno,student_firstname,student_lastname,student_year,student_specialization from student_details where student_rollnno like '".$studentid."' and student_phone like '".$phonenumber."';";
+		    	$sql1="select student_rollnno,student_firstname,student_lastname,student_year,student_specialization from first_second_year_student_details where student_rollnno like '".$studentid."' and student_phone like '".$phonenumber."';";
 		    	$result1 = mysqli_query($con,$sql1);
 		    	
 		    	if(mysqli_num_rows($result1)>0){

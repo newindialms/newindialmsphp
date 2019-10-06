@@ -1,7 +1,7 @@
 <?php
 require "init.php";
 	
-$query= "SELECT DISTINCT course_schedule_issue FROM course_schedule ORDER BY course_schedule_issue;";
+$query= "SELECT DISTINCT course_schedule_issue FROM course_schedule_secondyear ORDER BY course_schedule_issue;";
 
 $result = mysqli_query($con,$query);
 $response=array();

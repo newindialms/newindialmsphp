@@ -21,7 +21,7 @@ if(isset($_POST["Import"]))
  $student_year = $filesop[10];
  
  
- $sql = "INSERT INTO student_details (studentdetails_ID,student_rollnno, student_lastname,student_firstname,student_phone,student_email,student_program,student_specialization,student_joining,student_graduation,student_year) VALUES ('$studentdetails_ID','$student_rollnno','$student_lastname','$student_firstname','$student_phone','$student_email','$student_program','$student_specialization','$student_joining','$student_graduation','$student_year')";
+ $sql = "INSERT INTO first_second_year_student_details (studentdetails_ID,student_rollnno, student_lastname,student_firstname,student_phone,student_email,student_program,student_specialization,student_joining,student_graduation,student_year) VALUES ('$studentdetails_ID','$student_rollnno','$student_lastname','$student_firstname','$student_phone','$student_email','$student_program','$student_specialization','$student_joining','$student_graduation','$student_year')";
  $result = mysqli_query($con,$sql);
  }
  

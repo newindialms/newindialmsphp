@@ -1,7 +1,7 @@
 <?php
 require "init.php";
 
-$query3= "SELECT DISTINCT course_details_category FROM course_details;";
+$query3= "SELECT DISTINCT course_details_category FROM second_year_course_list;";
 
 $result3 = mysqli_query($con,$query3);
 

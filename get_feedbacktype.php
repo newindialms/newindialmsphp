@@ -1,7 +1,7 @@
 <?php
 require "init.php";
 
-$query= "select DISTINCT feedback_type from feedback_info ORDER BY feedback_type ;";
+$query= "select DISTINCT feedback_type from feedback_questions ORDER BY feedback_type ;";
 
 $result = mysqli_query($con,$query);
 $response=array();

@@ -3,9 +3,9 @@ require "init.php";
 
 $student_rollnno = $_POST['student_rollnno'];
 
-$queryc= "SELECT DISTINCT course_details_specialization FROM course_details WHERE course_details_category='Elective' ORDER BY course_details_specialization;";
+$queryc= "SELECT DISTINCT course_details_specialization FROM second_year_course_list WHERE course_details_category='Elective' ORDER BY course_details_specialization;";
 
-$querym= "SELECT student_specialization FROM student_details WHERE student_rollnno='$student_rollnno' ORDER BY student_specialization;";
+$querym= "SELECT student_specialization FROM first_second_year_student_details WHERE student_rollnno='$student_rollnno' ORDER BY student_specialization;";
 
 $resultm = mysqli_query($con,$querym);
 $resultc = mysqli_query($con,$queryc);

@@ -3,7 +3,7 @@ require "init.php";
 
 $faculty_employeeid = $_POST["faculty_employeeid"];
 
-$query= "select DISTINCT course_details_name from attendace_details WHERE faculty_employeeid='$faculty_employeeid';";
+$query= "select DISTINCT course_details_name from second_year_attendance_details WHERE faculty_employeeid='$faculty_employeeid';";
 
 $result = mysqli_query($con,$query);
 $response=array();

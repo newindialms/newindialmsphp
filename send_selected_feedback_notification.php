@@ -13,10 +13,10 @@ require "init.php";
     $feedback_course_details = $_POST["feedback_course_details"];
 
 if($coursetype==="1"){
-    $query="SELECT student_rollnno from attendace_details_first where (`attendance_date`='$course_date' AND `attendance_time`='$course_time' AND `attendance_status`='Present' AND `group_name`='$groupname' AND `section_name`='$sectionname' )";
+    $query="SELECT student_rollnno from first_year_attendance_details where (`attendance_date`='$course_date' AND `attendance_time`='$course_time' AND `attendance_status`='Present' AND `group_name`='$groupname' AND `section_name`='$sectionname' )";
 }
 else{
-	$query="SELECT student_rollnno from attendace_details where (`attendance_date`='$course_date' AND `attendance_time`='$course_time' AND `attendance_status`='Present')";
+	$query="SELECT student_rollnno from second_year_attendance_details where (`attendance_date`='$course_date' AND `attendance_time`='$course_time' AND `attendance_status`='Present')";
 }
 
 $result = mysqli_query($con,$query);

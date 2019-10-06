@@ -14,7 +14,7 @@ if ($conn->connect_error) {
  die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT a.student_firstname,a.student_lastname,a.student_rollnno,a.student_email,a.student_program,a.student_specialization,b.url FROM student_details a,studentprofile_image b WHERE (b.name ='$studentid' AND a.student_rollnno ='$studentid');";
+$sql = "SELECT a.student_firstname,a.student_lastname,a.student_rollnno,a.student_email,a.student_program,a.student_specialization,b.url FROM first_second_year_student_details a,studentprofile_image b WHERE (b.name ='$studentid' AND a.student_rollnno ='$studentid');";
 
 $result = $conn->query($sql);
 
@@ -30,7 +30,7 @@ if ($result->num_rows >0) {
  }
  
 } else {
- $sql1 = "SELECT a.student_firstname,a.student_lastname,a.student_rollnno,a.student_email,a.student_program,a.student_specialization FROM student_details a WHERE a.student_rollnno ='$studentid';";
+ $sql1 = "SELECT a.student_firstname,a.student_lastname,a.student_rollnno,a.student_email,a.student_program,a.student_specialization FROM first_second_year_student_details a WHERE a.student_rollnno ='$studentid';";
  
  $result1 = $conn->query($sql1);
 	while($row1[] = $result1->fetch_assoc()) {

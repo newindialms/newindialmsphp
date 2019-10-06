@@ -7,7 +7,7 @@ $studentid = $_POST['studentid'];
 $datevalue = $_POST['datevalue'];
 $datevalue=date('d-m-Y', strtotime($datevalue));
 
-$querymain= "SELECT group_number,batch_number from first_year WHERE student_rollnno ='$studentid';";
+$querymain= "SELECT group_number,batch_number from first_year_students WHERE student_rollnno ='$studentid';";
 
 $resultmain = mysqli_query($con,$querymain);
 

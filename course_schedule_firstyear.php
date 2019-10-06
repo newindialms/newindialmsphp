@@ -135,7 +135,7 @@ $result=mysqli_query($con,$query);
 						<label>Choose Issue</label><select name="course_schedule_issue">
 						<?php 
 								require "init.php";
-								$sql = mysqli_query($con, "SELECT course_schedule_issue FROM course_schedule_firstyear_issue");
+								$sql = mysqli_query($con, "SELECT course_schedule_secondyear_issue FROM course_schedule_firstyear_issue");
 								while ($row = $sql->fetch_assoc()){
 								echo '<option value="'.$row['course_schedule_issue'].'">' . $row['course_schedule_issue'] . "</option>";
 								}

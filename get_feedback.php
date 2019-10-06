@@ -1,7 +1,7 @@
 <?php
 require "init.php";
 
-$query= "select * from feedback_info ORDER BY feedback_type DESC;";
+$query= "select * from feedback_questions ORDER BY feedback_type DESC;";
 
 $result = mysqli_query($con,$query);
 $response=array();

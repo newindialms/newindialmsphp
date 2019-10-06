@@ -56,7 +56,7 @@ $(document).ready(function() {
 </script>
 	
 <?php 
-$query="SELECT course_schedule_id,course_schedule_day,course_schedule_date,course_schedule_program,course_schedule_starttime,course_schedule_endtime,course_schedule_course,course_schedule_faculty,course_schedule_issue from course_schedule WHERE (course_schedule_issue ='$course_schedule_issue' AND course_schedule_day='$course_schedule_day');";
+$query="SELECT course_schedule_id,course_schedule_day,course_schedule_date,course_schedule_program,course_schedule_starttime,course_schedule_endtime,course_schedule_course,course_schedule_faculty,course_schedule_issue from course_schedule_secondyear WHERE (course_schedule_issue ='$course_schedule_issue' AND course_schedule_day='$course_schedule_day');";
 $result=mysqli_query($con,$query);
 ?>
 <div class="header">
@@ -104,7 +104,7 @@ $result=mysqli_query($con,$query);
 						<label>Choose Issue</label><select name="course_schedule_issue">
 						<?php 
 								require "init.php";
-								$sql = mysqli_query($con, "SELECT course_schedule_issue FROM course_schedule_issue");
+								$sql = mysqli_query($con, "SELECT course_schedule_issue FROM course_schedule_secondyear_issue");
 								while ($row = $sql->fetch_assoc()){
 								echo '<option value="'.$row['course_schedule_issue'].'">' . $row['course_schedule_issue'] . "</option>";
 								}
@@ -161,7 +161,7 @@ $result=mysqli_query($con,$query);
 						<label>Choose Issue</label><select name="course_schedule_issue">
 						<?php 
 								require "init.php";
-								$sql = mysqli_query($con, "SELECT course_schedule_issue FROM course_schedule_issue");
+								$sql = mysqli_query($con, "SELECT course_schedule_issue FROM course_schedule_secondyear_issue");
 								while ($row = $sql->fetch_assoc()){
 								echo '<option value="'.$row['course_schedule_issue'].'">' . $row['course_schedule_issue'] . "</option>";
 								}

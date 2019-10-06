@@ -6,7 +6,7 @@ $student_joining = $_POST["student_joining"];
 $student_program = $_POST["student_program"];
 $student_specialization = $_POST["student_specialization"];
 
-$query= "SELECT student_firstname,student_lastname,student_rollnno,student_email FROM `student_details` WHERE student_joining like '".$student_joining."' AND student_program like '".$student_program."' and `student_specialization` LIKE '%$student_specialization%';";
+$query= "SELECT student_firstname,student_lastname,student_rollnno,student_email FROM `first_second_year_student_details` WHERE student_joining like '".$student_joining."' AND student_program like '".$student_program."' and `student_specialization` LIKE '%$student_specialization%';";
 
 $result = mysqli_query($con,$query);
 	$response=array();

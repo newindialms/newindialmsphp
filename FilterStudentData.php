@@ -14,7 +14,7 @@ if ($conn->connect_error) {
  die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM student_details where studentdetails_ID = '$id'" ;
+$sql = "SELECT * FROM first_second_year_student_details where studentdetails_ID = '$id'" ;
 
 $result = $conn->query($sql);
 

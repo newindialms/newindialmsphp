@@ -3,7 +3,7 @@ require "init.php";
 	
 $student_program = $_POST["student_program"];
 	
-$query= "select DISTINCT student_joining from student_details where student_program like '".$student_program."';";
+$query= "select DISTINCT student_joining from first_second_year_student_details where student_program like '".$student_program."';";
 
 $result = mysqli_query($con,$query);
 $response=array();

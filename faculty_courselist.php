@@ -20,7 +20,7 @@ $response=array();
         	                
         	            }
         }
-$query= "SELECT course_details_name,course_details_code FROM course_details WHERE (course_details_faculty=(select faculty_code from faculty_details where faculty_employeeid='".$faculty_employeeid."') AND course_details_category='Elective')ORDER BY course_details_name;";
+$query= "SELECT course_details_name,course_details_code FROM second_year_course_list WHERE (course_details_faculty=(select faculty_code from faculty_details where faculty_employeeid='".$faculty_employeeid."') AND course_details_category='Elective')ORDER BY course_details_name;";
 
 $result = mysqli_query($con,$query);
 $response1=array();

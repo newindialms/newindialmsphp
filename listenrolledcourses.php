@@ -3,12 +3,12 @@ require "init.php";
 
 $student_rollno = $_POST['student_rollno'];
 
-$queryyear="SELECT student_year FROM student_details WHERE student_rollnno ='$student_rollno'";
+$queryyear="SELECT student_year FROM first_second_year_student_details WHERE student_rollnno ='$student_rollno'";
 $resultyear = mysqli_query($con,$queryyear);
 
 while ($row = mysqli_fetch_assoc($resultyear)) {
   if($row['student_year']==1) {
-	$query= "SELECT first_year_courses FROM first_year WHERE student_rollnno ='$student_rollno'";
+	$query= "SELECT first_year_courses FROM first_year_students WHERE student_rollnno ='$student_rollno'";
 	$result = mysqli_query($con,$query);
 $response=array();
     while($rows = mysqli_fetch_array($result)){
@@ -26,7 +26,7 @@ $response=array();
     }
 }
     else{
-    	$query= "SELECT courses_enrolled  FROM student_year_table WHERE student_rollno ='$student_rollno'";
+    	$query= "SELECT courses_enrolled  FROM second_year_students WHERE student_rollno ='$student_rollno'";
     	$result = mysqli_query($con,$query);
     $response=array();
         while($rows = mysqli_fetch_array($result)){

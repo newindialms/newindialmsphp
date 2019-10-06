@@ -1,9 +1,9 @@
 <?php
 require "init.php";
 
-$query1= "select DISTINCT student_joining from student_details;";
-$query2= "select DISTINCT student_program from student_details;";
-$query3= "SELECT DISTINCT course_details_specialization FROM course_details WHERE course_details_category='Elective';";
+$query1= "select DISTINCT student_joining from first_second_year_student_details;";
+$query2= "select DISTINCT student_program from first_second_year_student_details;";
+$query3= "SELECT DISTINCT course_details_specialization FROM second_year_course_list WHERE course_details_category='Elective';";
 
 $result1 = mysqli_query($con,$query1);
 $result2 = mysqli_query($con,$query2);

@@ -60,7 +60,7 @@
 						<select name="course_schedule_issue">
 						<?php 
 								require "init.php";
-								$sql = mysqli_query($con, "SELECT course_schedule_issue FROM course_schedule_issue");
+								$sql = mysqli_query($con, "SELECT course_schedule_issue FROM course_schedule_secondyear_issue");
 								while ($row = $sql->fetch_assoc()){
 								echo '<option value="'.$row['course_schedule_issue'].'">' . $row['course_schedule_issue'] . "</option>";
 								}

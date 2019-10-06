@@ -7,7 +7,7 @@ $conn = new mysqli($host, $db_user, $db_pass, $db_name);
 
  $id = $_POST['id'];
 
-$Sql_Query = "DELETE FROM  student_details WHERE studentdetails_ID = '$id'";
+$Sql_Query = "DELETE FROM  first_second_year_student_details WHERE studentdetails_ID = '$id'";
 
  if(mysqli_query($con,$Sql_Query))
 {

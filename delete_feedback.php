@@ -3,7 +3,7 @@ require "init.php";
 
  $id = $_POST['id'];
 
-$sql = "DELETE FROM feedback_info WHERE id = '$id'";
+$sql = "DELETE FROM feedback_questions WHERE id = '$id'";
 
 $result = mysqli_query($con,$sql);
 $response=array();

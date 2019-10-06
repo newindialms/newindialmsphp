@@ -9,18 +9,18 @@ $sectionname = $_POST['sectionname'];
 $coursetype = $_POST['coursetype'];
 
 if($coursetype==="1"){
-    $querya= "SELECT student_rollnno FROM attendace_details_first WHERE(faculty_employeeid ='$faculty_employeeid' AND attendance_date ='$attendance_date' AND course_details_name='$course_details_name' AND attendance_status='Absent' AND group_name='$groupname' AND section_name='$sectionname')";
+    $querya= "SELECT student_rollnno FROM first_year_attendance_details WHERE(faculty_employeeid ='$faculty_employeeid' AND attendance_date ='$attendance_date' AND course_details_name='$course_details_name' AND attendance_status='Absent' AND group_name='$groupname' AND section_name='$sectionname')";
 
 
-    $query= "SELECT student_rollnno FROM attendace_details_first WHERE(faculty_employeeid ='$faculty_employeeid' AND attendance_date ='$attendance_date' AND course_details_name='$course_details_name' AND attendance_status='Present' AND group_name='$groupname' AND section_name='$sectionname')";
+    $query= "SELECT student_rollnno FROM first_year_attendance_details WHERE(faculty_employeeid ='$faculty_employeeid' AND attendance_date ='$attendance_date' AND course_details_name='$course_details_name' AND attendance_status='Present' AND group_name='$groupname' AND section_name='$sectionname')";
 	
 	$queryfeedback= "SELECT student_id FROM attendace_after_feedback WHERE(faculty_id ='$faculty_employeeid' AND course_date ='$attendance_date' AND course_name='$course_details_name') ORDER BY id DESC LIMIT 1";
 }
 else{
-	$querya= "SELECT student_rollnno FROM attendace_details WHERE(faculty_employeeid ='$faculty_employeeid' AND attendance_date ='$attendance_date' AND course_details_name='$course_details_name' AND attendance_status='Absent')";
+	$querya= "SELECT student_rollnno FROM second_year_attendance_details WHERE(faculty_employeeid ='$faculty_employeeid' AND attendance_date ='$attendance_date' AND course_details_name='$course_details_name' AND attendance_status='Absent')";
 
 
-	$query= "SELECT student_rollnno FROM attendace_details WHERE(faculty_employeeid ='$faculty_employeeid' AND attendance_date ='$attendance_date' AND course_details_name='$course_details_name' AND attendance_status='Present')";
+	$query= "SELECT student_rollnno FROM second_year_attendance_details WHERE(faculty_employeeid ='$faculty_employeeid' AND attendance_date ='$attendance_date' AND course_details_name='$course_details_name' AND attendance_status='Present')";
 	
 	$queryfeedback= "SELECT student_id FROM attendace_after_feedback WHERE(faculty_id ='$faculty_employeeid' AND course_date ='$attendance_date' AND course_name='$course_details_name') ORDER BY id DESC LIMIT 1";
 
@@ -40,7 +40,7 @@ while($rowa=mysqli_fetch_array($resulta)){
 	$arraya = explode(',',$myarray);
     	    foreach ($arraya as $valuea) {
         	  	if($valuea!=0){
-        	  	      $subquery="SELECT `student_lastname` FROM `student_details` WHERE `student_rollnno`='$valuea' ";
+        	  	      $subquery="SELECT `student_lastname` FROM `first_second_year_student_details` WHERE `student_rollnno`='$valuea' ";
             	     $resultsub = mysqli_query($con,$subquery);
             	       while($row1=mysqli_fetch_array($resultsub)){
                              array_push($response,array("student_firstname"=>$row1[0],"attendance_status"=>'Absent',"student_rollnno"=>$valuea));
@@ -66,14 +66,14 @@ while($row=mysqli_fetch_array($result)){
 	$resultdiff = array_diff($array, $arrayf);
 	
 	  foreach ($resultf as $value) {
-	     $subquery=  "SELECT `student_lastname` FROM `student_details` WHERE `student_rollnno`='$value'";
+	     $subquery=  "SELECT `student_lastname` FROM `first_second_year_student_details` WHERE `student_rollnno`='$value'";
 	     $resultsub = mysqli_query($con,$subquery);
 	       while($row1=mysqli_fetch_array($resultsub)){
             array_push($response,array("student_firstname"=>$row1[0],"attendance_status"=>'Present',"student_rollnno"=>$value));
 	       }
 	}
 	foreach ($resultdiff as $value) {
-	     $subquery=  "SELECT `student_lastname` FROM `student_details` WHERE `student_rollnno`='$value'";
+	     $subquery=  "SELECT `student_lastname` FROM `first_second_year_student_details` WHERE `student_rollnno`='$value'";
 	     $resultsub = mysqli_query($con,$subquery);
 	       while($row1=mysqli_fetch_array($resultsub)){
             array_push($response,array("student_firstname"=>$row1[0],"attendance_status"=>'Feedback Pending',"student_rollnno"=>$value));
