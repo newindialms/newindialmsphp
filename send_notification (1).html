@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Send Push Notification</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+ <br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center"><h1>New India LMS APP - Send Notification</h1></div>
+			<br>
+			<div class="col-md-6  col-sm-offset-3">
+						<form class="well" action="send_notification.php" method="post" >
+							
+                            <div class="control-group">
+                                <div class="control-label">
+                                    <label>Title:</label>
+                                </div>
+                                <div class="controls form-group">
+								<input type="text" name="title" class="input-medium form-control"/>
+                              
+                                </div>
+								<div class="control-label">
+                                    <label>Message:</label>
+                                </div>
+                                <div class="controls form-group">
+								<input type="text" name="message" class="input-medium form-control"/>
+                              
+                                </div>
+                            
+                            <div class="control-group">
+                                <div class="controls">
+                                <button type="submit" id="submit" name="Import" class="btn btn-success btn-flat btn-lg pull-right button-loading" data-loading-text="Loading...">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+               </div> 
+        </div>
+
+</body>
+</html>

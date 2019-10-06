@@ -1,0 +1,51 @@
+body{
+    font-family: "Times New Roman", Times, serif;
+    font: 400 15px/1.8 "Lato", sans-serif;
+}
+
+#login-card{
+    width:450px;
+    margin: 100px auto;
+}
+
+#login-header{
+    text-align: center;
+    color: #990000;
+}  
+
+.login-button,.login-button:visited,.login-button:focus,.login-button:hover{
+    color: #FFF;
+    background-color: #990000;
+}
+.card {
+    opacity: .7;
+}
+
+.form-control {
+ border-color: #990000;
+}
+h1.main-header{
+    color: #990000;
+    text-align: center;
+}
+
+.logoutclass {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+#logout_button{
+    color: #FFF;
+    background-color: #990000;
+}
+
+h2.sub-header{
+    color: #990000;
+    text-align: center;
+}
+
+#enroll_student{
+     background-color: #990000;
+     text-color:#fff;
+}

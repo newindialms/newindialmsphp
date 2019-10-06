@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New India LMS Admin-Dashbaord</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+</head>
+<body>
+    <!--City Map Dashboard -->
+        <h1 class="main-header"> New India LMS Dashboard Page</h1>
+        <div class="logoutclass">
+            <button id="logout_button">Logout</button>
+        </div>
+        <div class="album py-5 bg-light">
+            <div class="container">
+    
+              <div class="row">
+                <div class="col-md-4">
+                    <h2 class="sub-header">Enroll Faculty</h2>
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" src="image/faculty_enroll.jpg" alt="faculty">
+                    <div class="card-body">
+                      <p class="card-text">Use this section to enroll Faculty, you can manualy fill in the form or upload the excel sheel. Click on the Update button to submit the form.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" id="enroll_student" class="btn btn-sm btn-outline-secondary"  onclick="window.open('https://newindialms.com/enroll_faculty_form.php');"  >Update</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                        <h2 class="sub-header">Enroll Student</h2>
+                    <div class="card mb-4 box-shadow">
+                      <img class="card-img-top" src="image/student_enroll.jpg" alt="student">
+                      <div class="card-body">
+                            <p class="card-text">Use this section to enroll Student, you can manualy fill in the form or upload the excel sheel. Click on the Update button to submit the form.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" id="enroll_student" class="btn btn-sm btn-outline-secondary"   onclick="window.open('https://newindialms.com/enroll_student_form.php');">Update</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <h2 class="sub-header">Academic Calendar</h2>
+                    <div class="card mb-4 box-shadow">
+                      <img class="card-img-top" src="image/academic_calendar.jpg" alt="student">
+                      <div class="card-body">
+                            <p class="card-text">Use this section to update the Academic Calendar, you can manualy fill in the form or upload the excel sheel. Click on the Update button to submit the form.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" id="enroll_student" class="btn btn-sm btn-outline-secondary" onclick="window.open('http://newindialms.com/calendarform.php');">Update</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <h2 class="sub-header">Course Schedule - First year</h2>
+                    <div class="card mb-4 box-shadow">
+                      <img class="card-img-top" src="image/class_schedule.png" alt="student">
+                      <div class="card-body">
+                            <p class="card-text">Use this section to update the Course Schedule for First year, you can manualy fill in the form or upload the excel sheel. Click on the Update button to submit the form.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" id="enroll_student" class="btn btn-sm btn-outline-secondary" onclick="window.open('https://newindialms.com/course_schedule_firstyear.php');">Update</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <h2 class="sub-header">Course Schedule - Second year</h2>
+                    <div class="card mb-4 box-shadow">
+                      <img class="card-img-top" src="image/class_schedule_second.jpg" alt="student">
+                      <div class="card-body">
+                            <p class="card-text">Use this section to update the Course Schedule for second year, you can manualy fill in the form or upload the excel sheel. Click on the Update button to submit the form.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" id="enroll_student" class="btn btn-sm btn-outline-secondary" onclick="window.open('https://newindialms.com/course_schedule.php');">Update</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+        </div>
+   <!--  Script Files -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="  crossorigin="anonymous"></script>
+   <script src="js/main.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+        firebase.auth().onAuthStateChanged(function(user){
+            if(!user){
+                window.location.href="index.html";
+            }
+        });
+    
+    </script>
+</body>
+</html>
