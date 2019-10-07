@@ -20,3 +20,6 @@ while($row=mysqli_fetch_array($result)){
 mysqli_close($con);
 echo json_encode(array('Ratefeedback'=>$response));
 ?>
+mysqli_close($con);
+echo json_encode(array('Ratefeedback'=>$response));
+?>

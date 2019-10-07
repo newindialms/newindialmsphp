@@ -2,75 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d47541f-c472-47a5-b274-800419f89e0f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/AllCourseList.php" beforeDir="false" afterPath="$PROJECT_DIR$/AllCourseList.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AllStudentData.php" beforeDir="false" afterPath="$PROJECT_DIR$/AllStudentData.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeleteStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/DeleteStudent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FilterStudentData.php" beforeDir="false" afterPath="$PROJECT_DIR$/FilterStudentData.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/SearchStudent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add_feedback.php" beforeDir="false" afterPath="$PROJECT_DIR$/add_feedback.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add_first_course.php" beforeDir="false" afterPath="$PROJECT_DIR$/add_first_course.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance_courselist.php" beforeDir="false" afterPath="$PROJECT_DIR$/attendance_courselist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course_schedule.php" beforeDir="false" afterPath="$PROJECT_DIR$/course_schedule.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course_schedule_firstyear.php" beforeDir="false" afterPath="$PROJECT_DIR$/course_schedule_firstyear.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delete_course_schedule_details.php" beforeDir="false" afterPath="$PROJECT_DIR$/delete_course_schedule_details.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delete_feedback.php" beforeDir="false" afterPath="$PROJECT_DIR$/delete_feedback.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disenrolledcourses.php" beforeDir="false" afterPath="$PROJECT_DIR$/disenrolledcourses.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disenrolledspecialization.php" beforeDir="false" afterPath="$PROJECT_DIR$/disenrolledspecialization.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edit_course_schedule_details.php" beforeDir="false" afterPath="$PROJECT_DIR$/edit_course_schedule_details.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enroll_student_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/enroll_student_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/faculty_courselist.php" beforeDir="false" afterPath="$PROJECT_DIR$/faculty_courselist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/faculty_group_firstyear.php" beforeDir="false" afterPath="$PROJECT_DIR$/faculty_group_firstyear.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getFeedbacklist.php" beforeDir="false" afterPath="$PROJECT_DIR$/getFeedbacklist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_attendancedetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_attendancedetails.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_calendardetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_calendardetails.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_corecourse_student.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_corecourse_student.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_course_schedule_issue.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_course_schedule_issue.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_course_specific.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_course_specific.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_course_type.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_course_type.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_courselist.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_courselist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_coursemodule.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_coursemodule.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_cumulative_attendance.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_cumulative_attendance.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_days.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_days.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_daywise_attendance.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_daywise_attendance.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_faculty_schedule.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_faculty_schedule.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_feedback.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_feedback.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_feedbacktitle.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_feedbacktitle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_feedbacktype.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_feedbacktype.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_individual_attendance.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_individual_attendance.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_issue.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_issue.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_issue_firstyear.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_issue_firstyear.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_program.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_program.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_removecourselist.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_removecourselist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_second_year_faculty_name.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_second_year_faculty_name.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_specialization.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_specialization.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_specializationname.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_specializationname.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_student_fulllist.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_student_fulllist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_student_name.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_student_name.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_student_schedule.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_student_schedule.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_student_schedule_firstyear.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_student_schedule_firstyear.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_timetable.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_timetable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_yearofSpecialization.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_yearofSpecialization.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_yearofjoining.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_yearofjoining.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/id3253900_lms_db (1).sql" beforeDir="false" afterPath="$PROJECT_DIR$/id3253900_lms_db (1).sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/import_student_csv.php" beforeDir="false" afterPath="$PROJECT_DIR$/import_student_csv.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insert_enrollcourse.php" beforeDir="false" afterPath="$PROJECT_DIR$/insert_enrollcourse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insert_enrollspecialization.php" beforeDir="false" afterPath="$PROJECT_DIR$/insert_enrollspecialization.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insert_student_details.php" beforeDir="false" afterPath="$PROJECT_DIR$/insert_student_details.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insertcalendardetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/insertcalendardetails.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/listenrolledcourses.php" beforeDir="false" afterPath="$PROJECT_DIR$/listenrolledcourses.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/listenrolledspecilization.php" beforeDir="false" afterPath="$PROJECT_DIR$/listenrolledspecilization.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu_courselist.php" beforeDir="false" afterPath="$PROJECT_DIR$/menu_courselist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_course.php" beforeDir="false" afterPath="$PROJECT_DIR$/new_course.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newform.php" beforeDir="false" afterPath="$PROJECT_DIR$/newform.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saveattendance.php" beforeDir="false" afterPath="$PROJECT_DIR$/saveattendance.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saveattendancegroup.php" beforeDir="false" afterPath="$PROJECT_DIR$/saveattendancegroup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/send_selected_feedback_notification.php" beforeDir="false" afterPath="$PROJECT_DIR$/send_selected_feedback_notification.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spinner_studentlist.php" beforeDir="false" afterPath="$PROJECT_DIR$/spinner_studentlist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student_profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/student_profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timetable.php" beforeDir="false" afterPath="$PROJECT_DIR$/timetable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/update_feedback.php" beforeDir="false" afterPath="$PROJECT_DIR$/update_feedback.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/viewattendance.php" beforeDir="false" afterPath="$PROJECT_DIR$/viewattendance.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_all_like_feedback.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_all_like_feedback.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_all_rate_feedback.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_all_rate_feedback.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_all_smiley_feedback.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_all_smiley_feedback.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/submitLikeFeedbacklist.php" beforeDir="false" afterPath="$PROJECT_DIR$/submitLikeFeedbacklist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/submitRateFeedbacklist.php" beforeDir="false" afterPath="$PROJECT_DIR$/submitRateFeedbacklist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/submitSmileyFeedbacklist.php" beforeDir="false" afterPath="$PROJECT_DIR$/submitSmileyFeedbacklist.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,11 +17,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/add_feedback.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/submitSmileyFeedbacklist.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+            <state relative-caret-position="250">
+              <caret line="10" column="42" lean-forward="true" selection-end-line="48" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/submitRateFeedbacklist.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/get_all_like_feedback.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/get_all_rate_feedback.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="22" selection-start-line="22" selection-end-line="24" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/submitLikeFeedbacklist.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="23" column="32" lean-forward="true" selection-end-line="47" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -112,6 +85,7 @@
       <find>from attendace_details_first</find>
       <find>from course_schedule_issue</find>
       <find>calendar_details</find>
+      <find>submitSmileyFeedbacklist</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Kamal\NEWINDIALMSPHP</dir>
@@ -123,12 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/get_specializationname.php" />
-        <option value="$PROJECT_DIR$/SearchStudent.php" />
-        <option value="$PROJECT_DIR$/get_yearofjoining.php" />
-        <option value="$PROJECT_DIR$/FilterStudentData.php" />
-        <option value="$PROJECT_DIR$/student_profile.php" />
-        <option value="$PROJECT_DIR$/get_program.php" />
         <option value="$PROJECT_DIR$/get_student_name.php" />
         <option value="$PROJECT_DIR$/AllCourseList.php" />
         <option value="$PROJECT_DIR$/enroll_student_form.php" />
@@ -174,6 +142,12 @@
         <option value="$PROJECT_DIR$/course_schedule_firstyear.php" />
         <option value="$PROJECT_DIR$/insertcalendardetails.php" />
         <option value="$PROJECT_DIR$/get_calendardetails.php" />
+        <option value="$PROJECT_DIR$/get_all_smiley_feedback.php" />
+        <option value="$PROJECT_DIR$/submitSmileyFeedbacklist.php" />
+        <option value="$PROJECT_DIR$/get_all_rate_feedback.php" />
+        <option value="$PROJECT_DIR$/submitLikeFeedbacklist.php" />
+        <option value="$PROJECT_DIR$/get_all_like_feedback.php" />
+        <option value="$PROJECT_DIR$/submitRateFeedbacklist.php" />
       </list>
     </option>
   </component>
@@ -237,9 +211,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.23967612" />
+      <window_info content_ui="combo" id="Project" weight="0.23967612" />
       <window_info id="Structure" side_tool="true" />
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -247,7 +220,7 @@
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Captures" order="0" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Version Control" weight="0.3285968" />
       <window_info anchor="bottom" id="TODO" />
       <window_info anchor="bottom" id="Run" />
       <window_info anchor="bottom" id="Debug" />
@@ -261,6 +234,29 @@
       <window_info anchor="right" id="Flutter Outline" />
       <window_info anchor="right" id="Palette&#9;" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Structure" order="0" side_tool="true" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info id="Resources Explorer" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Image Layers" order="5" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.23967612" />
+      <window_info id="Captures" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="0" />
+      <window_info anchor="bottom" id="Run" order="1" />
+      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Flutter Performance" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3285968" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Flutter Inspector" order="2" />
+      <window_info anchor="right" id="Flutter Outline" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/get_issue.php">
@@ -337,6 +333,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/submitTextFeedbacklist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-703">
+          <caret line="4" column="50" lean-forward="true" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_all_text_feedback.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="22" selection-start-line="22" selection-end-line="24" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_all_smiley_feedback.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="22" selection-start-line="22" selection-end-line="24" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/submitLikeFeedbacklist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="23" column="32" lean-forward="true" selection-end-line="47" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_all_like_feedback.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_all_rate_feedback.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="22" selection-start-line="22" selection-end-line="24" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/submitSmileyFeedbacklist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="42" lean-forward="true" selection-end-line="48" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/submitRateFeedbacklist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
         </state>
       </provider>
     </entry>
