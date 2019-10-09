@@ -56,7 +56,7 @@ $(document).ready(function() {
 </script>
 	
 <?php 
-$query="SELECT course_schedule_id,course_schedule_day,course_schedule_date,course_schedule_program,course_schedule_starttime,course_schedule_endtime,course_schedule_course,course_schedule_faculty,course_schedule_issue from course_schedule_secondyear WHERE (course_schedule_issue ='$course_schedule_issue' AND course_schedule_day='$course_schedule_day');";
+$query="SELECT course_schedule_id,course_schedule_day,course_schedule_date,course_schedule_program,course_schedule_starttime,course_schedule_endtime,course_schedule_course,course_schedule_faculty,course_schedule_issue from course_schedule WHERE (course_schedule_issue ='$course_schedule_issue' AND course_schedule_day='$course_schedule_day');";
 $result=mysqli_query($con,$query);
 ?>
 <div class="header">
@@ -102,9 +102,9 @@ $result=mysqli_query($con,$query);
 				<form role="form" action="insert_course_schedule_details.php" method="post">
 					<div class="form-group">
 						<label>Choose Issue</label><select name="course_schedule_issue">
-						<?php 
+						<?php
 								require "init.php";
-								$sql = mysqli_query($con, "SELECT course_schedule_issue FROM course_schedule_secondyear_issue");
+								$sql = mysqli_query($con, "SELECT course_schedule_issue FROM course_schedule_issue");
 								while ($row = $sql->fetch_assoc()){
 								echo '<option value="'.$row['course_schedule_issue'].'">' . $row['course_schedule_issue'] . "</option>";
 								}
@@ -123,7 +123,7 @@ $result=mysqli_query($con,$query);
 							<option name="Sunday" value="Sunday">Sunday</option>
 						</select>
 					</div>
-					
+
 					<div class="form-group">
 						<label>Date</label>
 						<input type="text" name="course_schedule_date" class="form-control" />
@@ -152,16 +152,16 @@ $result=mysqli_query($con,$query);
 				</form>
 		</div>
 		<hr>
-	<div id="showform" class="col-sm-12">	
-	
+	<div id="showform" class="col-sm-12">
+
 	<h1 class="header">MBA Program Time Table </h1>
 		<form role="form" action="course_schedule.php" method="post">
-		
+
 		<div class="form-group">
 						<label>Choose Issue</label><select name="course_schedule_issue">
-						<?php 
+						<?php
 								require "init.php";
-								$sql = mysqli_query($con, "SELECT course_schedule_issue FROM course_schedule_secondyear_issue");
+								$sql = mysqli_query($con, "SELECT course_schedule_issue FROM course_schedule_issue");
 								while ($row = $sql->fetch_assoc()){
 								echo '<option value="'.$row['course_schedule_issue'].'">' . $row['course_schedule_issue'] . "</option>";
 								}
@@ -180,13 +180,13 @@ $result=mysqli_query($con,$query);
 							<option name="Sunday" value="Sunday">Sunday</option>
 						</select>
 					</div>
-				<button type="submit" id="btnSubmit" class="btn btn-info btn-block">Submit Schedule</button>	
-		
+				<button type="submit" id="btnSubmit" class="btn btn-info btn-block">Submit Schedule</button>
+
 		<div class="col-sm-12">
 			<table class="table">
 				<thead>
 				<tr>
-					
+
 					<th>Day</th>
 					<th>Date</th>
 					<th>Pogram</th>
@@ -199,7 +199,7 @@ $result=mysqli_query($con,$query);
 				</tr>
 				</thead>
 				<tbody>
-				
+
 				<?php
 					while($row=mysqli_fetch_array($result)){
 				?>
@@ -212,20 +212,20 @@ $result=mysqli_query($con,$query);
 						<td><?php echo $row['course_schedule_course']?></td>
 						<td><?php echo $row['course_schedule_faculty']?></td>
 						<td><?php echo $row['course_schedule_issue']?></td>
-						
+
 						<td>
 						<a href="edit_course_schedule_details.php?id=<?php echo $row['course_schedule_id']; ?>" class="btn btn-success" role="button">Edit</a>
 						<a href="delete_course_schedule_details.php?id=<?php echo $row['course_schedule_id']; ?>" class="btn btn-danger" role="button">Delete</a>
 						</td>
 					</tr>
-					<?php 
+					<?php
 					}
 					mysqli_close($con);
 					?>
 				</tbody>
 			</table>
-		
-		
+
+
 		</form>
 		</div>
 	</div>
@@ -242,7 +242,7 @@ $result=mysqli_query($con,$query);
                 window.location.href="index.html";
             }
         });
-    
+
     </script>
 </body>
 </html>

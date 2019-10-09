@@ -13,7 +13,7 @@ $response=array();
 if($studentyear==="1"){
      $queryfeedback= "SELECT student_id,course_date,course_time FROM attendace_after_feedback WHERE course_name='$course_details_name'";
       $resultfeedback = mysqli_query($con,$queryfeedback);
-        
+
         while($row=mysqli_fetch_array($resultfeedback)){
            	$queryattendance= "SELECT student_rollnno FROM first_year_attendance_details WHERE (attendance_date='$row[1]' AND attendance_time='$row[2]'AND attendance_status='Present' AND section_name='$sectionval[batch_number]')";
         $resultattendancek = mysqli_query($con,$queryattendance);
@@ -24,7 +24,7 @@ if($studentyear==="1"){
                       {
                        array_push($response,array("attendance_date"=>$row[1],"attendance_status"=>"Feedback Pending","attendance_time"=>$row[2],"attendance_day"=>(date('D', strtotime($row[1])))));
                       }
-        
+
                     if (in_array($student_rollnno, $myarray1) && (in_array($student_rollnno, $myarray2)))
                       {
                        array_push($response,array("attendance_date"=>$row[1],"attendance_status"=>"Present","attendance_time"=>$row[2],"attendance_day"=>(date('D', strtotime($row[1])))));
@@ -38,9 +38,9 @@ if($studentyear==="1"){
 }
 else{
         $queryfeedback= "SELECT student_id,course_date,course_time FROM attendace_after_feedback WHERE course_name='$course_details_name'";
-        
+
         $resultfeedback = mysqli_query($con,$queryfeedback);
-        
+
         while($row=mysqli_fetch_array($resultfeedback)){
         	$queryattendance= "SELECT student_rollnno FROM second_year_attendance_details WHERE (attendance_date='$row[1]' AND attendance_time='$row[2]'AND attendance_status='Present')";
         	$resultattendancek = mysqli_query($con,$queryattendance);

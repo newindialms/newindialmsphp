@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<?php 
+<?php
  include 'init.php';
-?> 
+?>
 <html lang="en">
  <head>
   <meta charset="utf-8">
-  <title>Enroll Student</title>
+  <title>Enroll New APP User</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="title" content="NEW India LMS APP">
-  <meta name="description" content="Enroll Student">
+  <meta name="description" content="Enroll New APP User">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
   <style>
-      
-      h1.main-header{
+    h1.main-header{
     color: #990000;
     text-align: center;
 }
@@ -31,18 +30,18 @@
 
   </style>
  </head>
- <body>    
+ <body>
     <br><br>
         <div class="container">
             <div class="row">
-             <div class="col-md-12 text-center"><h1 class="main-header">New India LMS APP - Student Enrollment</h1></div>
+             <div class="col-md-12 text-center"><h1 class="main-header">New India LMS APP - Faculty Enrollment</h1></div>
              <div class="logoutclass">
             <button id="logout_button">Logout</button>
         </div>
 			<br>
-               
+
                 <div class="col-md-6  col-sm-offset-3" id="form-login">
-                    <form class="well" action="import_student_csv.php" method="post" name="upload_excel" enctype="multipart/form-data">
+                    <form class="well" action="import_newappuser_csv.php" method="post" name="upload_excel" enctype="multipart/form-data">
                         <fieldset>
                             <legend>Import CSV/Excel file</legend>
                             <div class="control-group">
@@ -53,7 +52,7 @@
                                     <input type="file" name="file" id="file" class="input-large form-control">
                                 </div>
                             </div>
-                            
+
                             <div class="control-group">
                                 <div class="controls">
                                 <button type="submit" id="submit" name="Import" class="btn btn-success btn-flat btn-lg pull-right button-loading" data-loading-text="Loading...">Upload</button>
@@ -62,18 +61,19 @@
                         </fieldset>
                     </form>
                 </div>
-			
+
 			</div>
 			<div class="row">
-             <div class="col-md-12 text-center"><h1>Student Enrollment</h1></div>
-				<div class="col-md-6  col-sm-offset-3" id="student-login">
+             <div class="col-md-12 text-center"><h1>New Student Enrollment</h1></div>
+				<div class="col-md-6  col-sm-offset-3" id="faculty-login">
 				<br>
-                    <form class="well" action="insert_student_details.php" method="post" name="upload_studentdetails" enctype="multipart/form-data">
+
+                    <form class="well" action="insert_newuser_details.php" method="post" name="upload_facultydetails" enctype="multipart/form-data">
                         <fieldset>
                             <legend>Enter the Details</legend>
                             <div class="control-group">
                                 <div class="control-label">
-                                    <label>Roll No:</label>
+                                    <label>Student RollNo:</label>
                                 </div>
                                 <div class="controls form-group">
                                     <input type="text" name="student_rollnno" id="student_rollnno" class="input-medium form-control">
@@ -137,22 +137,21 @@
                             </div>
 							<div class="control-group">
                                 <div class="control-label">
-                                    <label>Student graduation:</label>
+                                    <label>Student Graduation:</label>
                                 </div>
                                 <div class="controls form-group">
                                     <input type="text" name="student_graduation" id="student_graduation" class="input-medium form-control">
                                 </div>
                             </div>
-						
 							<div class="control-group">
                                 <div class="control-label">
-                                    <label>Year</label>
+                                    <label>Student Year:</label>
                                 </div>
                                 <div class="controls form-group">
                                     <input type="text" name="student_year" id="student_year" class="input-medium form-control">
                                 </div>
                             </div>
-                            
+
                             <div class="control-group">
                                 <div class="controls">
                                 <button type="submit" id="submit" name="Import" class="btn btn-success btn-flat btn-lg pull-right button-loading" data-loading-text="Loading...">Submit</button>
@@ -161,14 +160,14 @@
                         </fieldset>
                     </form>
                 </div>
-             
+
             </div>
-            
-    
+
+
             <table>
-			
+
                 <?php
-                    $SQLSELECT = "SELECT * FROM first_second_year_student_details ";
+                    $SQLSELECT = "SELECT * FROM faculty_details ";
                     $result_set =  mysqli_query($con,$SQLSELECT);
                     $row = mysqli_fetch_array($result_set);
                 ?>
@@ -185,7 +184,7 @@
                 window.location.href="index.html";
             }
         });
-    
+
     </script>
  </body>
 </html>

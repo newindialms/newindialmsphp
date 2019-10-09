@@ -6,6 +6,7 @@ if(isset($_POST["Import"]))
  $file = $_FILES['file']['tmp_name'];
  $handle = fopen($file, "r");
  $c = 0;
+ fgetcsv($handle);
  while(($filesop = fgetcsv($handle, 1000, ",")) !== false)
  {
  $faculty_employeeid = $filesop[0];
