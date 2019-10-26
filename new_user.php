@@ -34,7 +34,7 @@
     <br><br>
         <div class="container">
             <div class="row">
-             <div class="col-md-12 text-center"><h1 class="main-header">New India LMS APP - Faculty Enrollment</h1></div>
+             <div class="col-md-12 text-center"><h1 class="main-header">New India LMS APP - New Student Enrollment</h1></div>
              <div class="logoutclass">
             <button id="logout_button">Logout</button>
         </div>
